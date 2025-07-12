@@ -4,17 +4,16 @@ using UnityEngine.InputSystem.Layouts;
 using UnityEngine.InputSystem.OnScreen;
 using UnityEngine.UI;
 
-namespace Utilities.InputSystem
+namespace Toolkit.InputSystem
 {
     // TODO:
-    // 1. Add position handling (in addition to current delta handling).
+    // 1. Add position handling (in addition to position delta handling).
     // 2. Add pointer index.
-    // 3. Rename to Input Rect.
 
     // https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/OnScreen.html
-    [AddComponentMenu("Input/On-Screen Drag Rect")]
+    [AddComponentMenu("Input/On-Screen Input Rect")]
     [RequireComponent(typeof(Graphic))]
-    public class OnScreenDragRect : OnScreenControl, IPointerDownHandler, IPointerUpHandler, IDragHandler
+    public class OnScreenInputRect : OnScreenControl, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
         [InputControl(layout = "Vector2")]
         [SerializeField]

@@ -2,7 +2,7 @@
 using UnityEngine.InputSystem.Layouts;
 using UnityEngine.InputSystem.OnScreen;
 
-namespace Utilities.InputSystem
+namespace Toolkit.InputSystem
 {
     [AddComponentMenu("Input/Generic Input")]
     public class GenericInput : OnScreenControl

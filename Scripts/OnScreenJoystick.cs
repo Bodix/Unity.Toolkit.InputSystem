@@ -1,18 +1,18 @@
-﻿using Packages.Toolkit.InputSystem.Scripts;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.Layouts;
 using UnityEngine.InputSystem.OnScreen;
 
-namespace Utilities.InputSystem
+namespace Toolkit.InputSystem
 {
     // https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/OnScreen.html
-    
+
     /// <summary>
     /// Designed to work with <a href="https://assetstore.unity.com/packages/tools/input-management/joystick-pack-107631"> Joystick Pack</a>
     /// </summary>
+    // TODO: Fix [RequireComponent] attribute in some way. [#bug]
+    // [RequireComponent(typeof(Joystick))]
     [AddComponentMenu("Input/On-Screen Joystick")]
-    [RequireComponent(typeof(IJoystick))]
     public class OnScreenJoystick : OnScreenControl, IPointerUpHandler
     {
         [InputControl(layout = "Stick")]
