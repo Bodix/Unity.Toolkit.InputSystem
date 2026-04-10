@@ -1,5 +1,5 @@
 {
-    "name": "com.evolutex.toolkit.inputsystem",
+    "name": "com.bodix.toolkit.inputsystem",
     "version": "1.0.0",
     "description": "Useful scripts to extend the new InputSystem from Unity",
     "displayName": "Toolkit.InputSystem",
