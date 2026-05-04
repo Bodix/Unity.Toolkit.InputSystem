@@ -19,6 +19,8 @@ namespace Toolkit.InputSystem
 		[SerializeField]
 		private string _controlPath;
 
+		public float Sensitivity = 1f;
+
 		private Vector2 _prevPointerPosition;
 		private Vector2 _currentPointerPosition;
 		private bool _isPointerDown;
@@ -33,7 +35,8 @@ namespace Toolkit.InputSystem
 		{
 			if (_isPointerDown)
 			{
-				SendValueToControl(_currentPointerPosition - _prevPointerPosition);
+				Vector2 delta = (_currentPointerPosition - _prevPointerPosition) * Sensitivity;
+				SendValueToControl(delta);
 
 				_prevPointerPosition = _currentPointerPosition;
 			}
