@@ -1,7 +1,8 @@
 {
     "name": "Toolkit.InputSystem",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c"
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:654eac4c1ce7d3146b6a35ed4a5384b0"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
