@@ -7,7 +7,7 @@ namespace Toolkit.InputSystem
 {
 	public class BackNavigationService : IBackNavigationService, IDisposable
 	{
-		private readonly List<IBackHandler> _handlers = new List<IBackHandler>();
+		private readonly List<IBackNavigationHandler> _handlers = new List<IBackNavigationHandler>();
 		private readonly InputAction _backAction;
 
 		public event Action QuitRequested;
@@ -22,7 +22,7 @@ namespace Toolkit.InputSystem
 			_backAction.Enable();
 		}
 
-		public void Register(IBackHandler handler)
+		public void Register(IBackNavigationHandler handler)
 		{
 			if (_handlers.Contains(handler))
 				_handlers.Remove(handler);
@@ -30,7 +30,7 @@ namespace Toolkit.InputSystem
 			_handlers.Add(handler);
 		}
 
-		public void Unregister(IBackHandler handler)
+		public void Unregister(IBackNavigationHandler handler)
 		{
 			_handlers.Remove(handler);
 		}
