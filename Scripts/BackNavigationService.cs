@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using PerfectCore;
+using PerfectCore.PerfectFoundation;
 using UnityEngine.InputSystem;
 
 namespace Toolkit.InputSystem
